@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/assets/images/fplibrary.png'); /* Use your bookshelf image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #f7f757;
+    padding: 10px 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  h1 {
+    flex-grow: 1;
+    margin: 0;
+    color: #000;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+  }
+  
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-gap: 20px;
+  }
+  
+  button {
+    padding: 20px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background-color: #f7f757;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e6e62f;
+  }
+  
