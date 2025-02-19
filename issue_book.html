@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Issue Book</title>
+  <link rel="stylesheet" href="assets/css/issue_book.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="assets/images/logo.png" alt="Skopick Logo" class="logo">
+      <h1>Issue Book</h1>
+    </div>
+    <form>
+      <label for="student-name">Student Name:</label>
+      <input type="text" id="student-name" name="student-name" required>
+
+      <label for="book-name">Book Name:</label>
+      <input type="text" id="book-name" name="book-name" required>
+
+      <label for="book-number">Book Number:</label>
+      <input type="text" id="book-number" name="book-number" required>
+
+      <label for="issue-date">Issue Date:</label>
+      <input type="date" id="issue-date" name="issue-date" required>
+
+      <label for="return-date">Date to be Returned:</label>
+      <input type="date" id="return-date" name="return-date" required>
+
+      <div class="button-container">
+        <button type="button" class="add-button" onclick="addBook()">Add</button>
+        <button type="button" class="back-button" onclick="goBack()">Back</button>
+      </div>
+    </form>
+  </div>
+  <script src="assets/js/issue_book.js"></script>
+</body>
+</html>

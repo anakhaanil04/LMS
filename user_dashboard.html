@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #d6ff57;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            width: 100px;
+        }
+        .dashboard-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .content {
+            position: relative;
+            text-align: center;
+        }
+        .background {
+            width: 100%;
+            height: auto;
+        }
+        .btn {
+            position: absolute;
+            background-color: #d6ff57;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        #book-details {
+            top: 40%;
+            left: 30%;
+        }
+        #student-details {
+            top: 40%;
+            right: 30%;
+        }
+        #add-student {
+            bottom: 20%;
+            left: 30%;
+        }
+        #batch {
+            bottom: 20%;
+            right: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="assets/images/logo.png" alt="Skopick Logo" class="logo">
+        <span class="dashboard-title">Main Dashboard</span>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Books</a>
+            <a href="#">Papers</a>
+            <a href="#">Online</a>
+            <a href="#">About</a>
+            <a href="#">Help</a>
+        </div>
+    </div>
+    <div class="content">
+        <img src="assets/images/dashboard.png" alt="Library Background" class="background">
+        <button class="btn" id="book-details">BOOK DETAILS</button>
+        <button class="btn" id="student-details">STUDENT DETAILS</button>
+        <button class="btn" id="add-student">ADD STUDENT</button>
+        <button class="btn" id="batch">BATCH</button>
+    </div>
+    <script>
+        document.getElementById("book-details").addEventListener("click", function() {
+            window.location.href = "book_details.html"; // Navigate to book-details.html
+        });
+        document.getElementById("student-details").addEventListener("click", function() {
+            window.location.href = "student_details.html"; // Navigate to student-details.html
+        });
+        document.getElementById("add-student").addEventListener("click", function() {
+            window.location.href = "add_student.html"; // Navigate to add-student.html
+        });
+        document.getElementById("batch").addEventListener("click", function() {
+            window.location.href = "batch.html"; // Navigate to batch.html
+        });
+    </script>
+</body>
+</html>

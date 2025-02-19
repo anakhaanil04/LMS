@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="assets/css/add_book.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <img src="assets/images/logo.png" alt="Skopick Logo" class="logo">
+            <h1 class="form-title">Add Book</h1>
+        </div>
+        <form id="book-form">
+            <label for="book-name">Book name:</label>
+            <input type="text" id="book-name" name="book-name" required>
+
+            <label for="isbn">ISBN:</label>
+            <input type="text" id="isbn" name="isbn" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="book-number">Book Number:</label>
+            <input type="text" id="book-number" name="book-number" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <div class="button-group">
+                <button type="submit" class="btn" id="add-book-btn">ADD BOOK</button>
+                <button type="button" class="btn" id="back-btn">BACK</button>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/add_book.js"></script>
+</body>
+</html>

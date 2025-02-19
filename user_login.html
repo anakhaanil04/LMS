@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login</title>
+  <link rel="stylesheet" href="assets/css/user_login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <img src="assets/images/logo.png" alt="Skopick Logo" class="logo">
+      <h1>User</h1>
+      <form id="loginForm">
+        <label for="username">username/e-mail</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">password</label>
+        <input type="password" id="password" name="password" required>
+
+        <a href="forget_password.html" class="forgot-password">forgot password</a>
+        <button type="submit">LOGIN</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Mock authentication (Replace with actual backend check)
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "admin" && password === "password123") { // Example credentials
+        window.location.href = "user_dashboard.html"; // Redirect to the dashboard
+      } else {
+        alert("Invalid username or password. Please try again.");
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Student Details</title>
+    <link rel="stylesheet" href="assets/css/add_student.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-title">New Student Details</h1>
+        <form id="student-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender" required>
+
+            <label for="batch">Batch:</label>
+            <input type="text" id="batch" name="batch" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="button-group">
+                <button type="submit" class="btn" id="ok-btn">OK</button>
+                <button type="button" class="btn" id="back-btn">BACK</button>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/add_student.js"></script>
+</body>
+</html>

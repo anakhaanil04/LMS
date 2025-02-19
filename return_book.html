@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Return Book</title>
+  <link rel="stylesheet" href="assets/css/return_book.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="assets/images/logo.png" alt="Skopick Logo" class="logo">
+      <h1>Return Book</h1>
+    </div>
+    <form>
+      <label for="student-name">Student Name:</label>
+      <input type="text" id="student-name" name="student-name" required>
+
+      <label for="book-name">Book name:</label>
+      <input type="text" id="book-name" name="book-name" required>
+
+      <label for="date-returned">Date Returned:</label>
+      <input type="date" id="date-returned" name="date-returned" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="review">Review:</label>
+      <textarea id="review" name="review" rows="3"></textarea>
+
+      <div class="button-container">
+        <button type="button" class="ok-button" onclick="submitForm()">OK</button>
+        <button type="button" class="back-button" onclick="goBack()">BACK</button>
+      </div>
+    </form>
+  </div>
+  <script src="assets/js/return_book.js"></script>
+</body>
+</html>

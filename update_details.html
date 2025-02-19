@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Book</title>
+  <link rel="stylesheet" href="assets/css/update_book.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="assets/images/logo.png" alt="Skopick Logo" class="logo">
+      <h1>Update Book</h1>
+    </div>
+    <form>
+      <label for="book-number">Book Number:</label>
+      <input type="text" id="book-number" name="book-number" required>
+
+      <label for="book-name">Book Name:</label>
+      <input type="text" id="book-name" name="book-name" required>
+
+      <label for="isbn">ISBN:</label>
+      <input type="text" id="isbn" name="isbn" required>
+
+      <div class="button-container">
+        <button type="button" class="add-button" onclick="addBook()">Add</button>
+        <button type="button" class="back-button" onclick="goBack()">Back</button>
+      </div>
+    </form>
+  </div>
+  <script src="assets/js/update_book.js"></script>
+</body>
+</html>
